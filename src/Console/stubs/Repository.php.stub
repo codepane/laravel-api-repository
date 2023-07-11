@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+
+use Codepane\LaravelAPIRepository\BaseRepository;
+{{modelImport}}
+
+class DummyClass extends BaseRepository
+{
+    protected ${{modelVariable}}Model;
+
+    public function __construct({{modelName}} ${{modelVariable}}Model)
+    {   
+        parent::__construct(${{modelVariable}}Model);
+        $this->{{modelVariable}}Model = ${{modelVariable}}Model;
+    }
+}

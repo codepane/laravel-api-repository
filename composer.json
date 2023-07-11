@@ -1,0 +1,39 @@
+{
+    "name": "codepane/laravel-api-repository",
+    "description": "API repository",
+    "version": "0.1",
+    "keywords": [
+        "codepane",
+        "laravel-api-repository"
+    ],
+    "homepage": "https://github.com/codepane/laravel-api-repository",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sanjay Prajapati",
+            "email": "sanjay.pra003@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Codepane\\LaravelAPIRepository\\": "src",
+            "Codepane\\LaravelAPIRepository\\Repositories\\": "src/Repositories"
+        }
+    },
+    "autoload-dev": {},
+    "scripts": {},
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codepane\\LaravelAPIRepository\\LaravelApiRepositoryServiceProvider"
+            ]
+        }
+    }
+}
